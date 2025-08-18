@@ -3,6 +3,7 @@
 import { MapPin, Phone, Clock, Facebook } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function ContactSection() {
   return (
@@ -97,9 +98,11 @@ export default function ContactSection() {
               }
               className="w-full hover:opacity-90 transition-opacity duration-300 focus:outline-none focus:ring-4 focus:ring-orange-300 rounded-2xl"
             >
-              <img
+              <Image
                 src="/images/google-map-image.png"
                 alt="Google Maps location of Lutong Ilocano Litson at 23 Garibaldi St, Guelph, ON"
+                width={1200}
+                height={675}
                 className="w-full h-auto object-cover"
               />
             </button>

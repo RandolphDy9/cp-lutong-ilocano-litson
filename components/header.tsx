@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,10 +21,13 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="/images/litson-logo.jpg"
               alt="Lutong Ilocano Litson Logo"
+              width={48}
+              height={48}
               className="w-12 h-12 rounded-full object-cover"
+              priority
             />
             <div>
               <h1 className="font-serif text-xl font-bold text-orange-600">Lutong Ilocano</h1>

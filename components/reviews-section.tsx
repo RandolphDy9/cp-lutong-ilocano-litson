@@ -59,7 +59,7 @@ export default function ReviewsSection() {
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
           <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it - hear from our satisfied customers who love our authentic Ilocano cuisine.
+            Don&apos;t just take our word for it - hear from our satisfied customers who love our authentic Ilocano cuisine.
           </p>
         </div>
 
@@ -68,7 +68,7 @@ export default function ReviewsSection() {
             <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">{renderStars(review.rating)}</div>
-                <p className="font-sans text-gray-700 mb-4 leading-relaxed">"{review.comment}"</p>
+                <p className="font-sans text-gray-700 mb-4 leading-relaxed">&ldquo;{review.comment}&rdquo;</p>
                 <div className="flex justify-between items-center">
                   <h4 className="font-sans font-semibold text-gray-800">{review.name}</h4>
                   <span className="font-sans text-sm text-gray-500">{review.date}</span>

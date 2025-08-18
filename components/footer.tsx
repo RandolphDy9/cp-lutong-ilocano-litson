@@ -1,12 +1,16 @@
+import Image from "next/image"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-3 mb-4 md:mb-0">
-            <img
+            <Image
               src="/images/litson-logo.jpg"
               alt="Lutong Ilocano Litson Logo"
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-full object-cover"
             />
             <div>

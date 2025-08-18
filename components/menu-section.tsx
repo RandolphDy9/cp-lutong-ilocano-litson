@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function MenuSection() {
   return (
     <section id="menu" className="py-20 relative overflow-hidden">
@@ -20,18 +22,22 @@ export default function MenuSection() {
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Appetizers & Main Dishes */}
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
-            <img
+            <Image
               src="/images/litson-menu-2.jpg"
               alt="Appetizers and Main Dishes Menu"
+              width={1200}
+              height={1600}
               className="w-full h-auto object-cover"
             />
           </div>
 
           {/* Fish, Veggies & Noodles */}
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
-            <img
+            <Image
               src="/images/litson-menu.jpg"
               alt="Fish, Vegetables and Noodles Menu"
+              width={1200}
+              height={1600}
               className="w-full h-auto object-cover"
             />
           </div>
@@ -43,7 +49,7 @@ export default function MenuSection() {
             Whole Litson Pricing
           </h3>
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
-            <img src="/images/liston-prices.jpg" alt="Whole Litson Pricing" className="w-full h-auto object-cover" />
+            <Image src="/images/liston-prices.jpg" alt="Whole Litson Pricing" width={1200} height={800} className="w-full h-auto object-cover" />
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Heart, Award, Users } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutSection() {
   return (
@@ -59,9 +60,11 @@ export default function AboutSection() {
 
             <div className="relative h-full">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-3 sm:p-4 hover:shadow-xl transition-shadow duration-300 h-full relative overflow-hidden">
-                <img
+                <Image
                   src="/images/all-lechon.jpg"
                   alt="Takeout containers filled with delicious roasted litson and crispy pork pieces"
+                  width={1200}
+                  height={800}
                   className="w-full h-64 sm:h-full rounded-xl object-cover"
                 />
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-md shadow text-center max-w-[90%]">
