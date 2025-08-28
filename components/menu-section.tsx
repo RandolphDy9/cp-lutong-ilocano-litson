@@ -44,12 +44,20 @@ export default function MenuSection() {
         </div>
 
         {/* Whole Litson Pricing */}
-        <div className="mt-16 max-w-4xl mx-auto">
+        <div className="mt-16 max-w-6xl mx-auto">
           <h3 className="font-serif text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
             Whole Litson Pricing
           </h3>
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
-            <Image src="/images/liston-prices.jpg" alt="Whole Litson Pricing" width={1200} height={800} className="w-full h-auto object-cover" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
+              <Image src="/images/whole.jpeg" alt="Whole Litson Pricing" width={1200} height={800} className="w-full h-auto object-cover" />
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
+              <Image src="/images/ulo.jpeg" alt="Ulo Litson Pricing" width={1200} height={800} className="w-full h-auto object-cover" />
+            </div>
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/70">
+              <Image src="/images/belly.jpeg" alt="Belly Litson Pricing" width={1200} height={800} className="w-full h-auto object-cover" />
+            </div>
           </div>
         </div>
       </div>

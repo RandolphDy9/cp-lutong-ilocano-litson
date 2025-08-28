@@ -18,44 +18,57 @@ export default function AboutSection() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-stretch">
             {/* Content Column */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6 sm:p-8 md:p-10 hover:shadow-xl transition-shadow duration-300 h-full">
-              <div className="flex justify-center gap-6 sm:gap-12 mb-6 sm:mb-8">
-                <div className="flex flex-col md:items-center">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
-                    <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600" />
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 md:p-10 hover:shadow-xl transition-all duration-300">
+              <div className="flex justify-center space-x-8 mb-8">
+                <div className="flex flex-col items-center group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <Heart className="w-7 h-7 text-orange-600" />
                   </div>
-                  <span className="font-sans text-sm text-gray-600">Made with Love</span>
+                  <span className="font-sans text-sm font-semibold text-gray-700">Made with Love</span>
+                  <span className="font-sans text-xs text-gray-500">Every Single Day</span>
                 </div>
-                <div className="flex flex-col md:items-center">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
-                    <Award className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600" />
+                <div className="flex flex-col items-center group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <Award className="w-7 h-7 text-orange-600" />
                   </div>
-                  <span className="font-sans text-sm text-gray-600">Authentic Recipes</span>
+                  <span className="font-sans text-sm font-semibold text-gray-700">Authentic Recipes</span>
+                  <span className="font-sans text-xs text-gray-500">Generations Old</span>
                 </div>
-                <div className="flex flex-col md:items-center">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-orange-100 rounded-full flex items-center justify-center mb-2">
-                    <Users className="w-5 h-5 sm:w-6 sm:h-6 text-orange-600" />
+                <div className="flex flex-col items-center group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-orange-100 to-amber-100 rounded-full flex items-center justify-center mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-7 h-7 text-orange-600" />
                   </div>
-                  <span className="font-sans text-sm text-gray-600">Family Tradition</span>
+                  <span className="font-sans text-sm font-semibold text-gray-700">Family Tradition</span>
+                  <span className="font-sans text-xs text-gray-500">Proudly Filipino</span>
                 </div>
               </div>
 
-              <p className="font-sans text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
-                Welcome to <strong>Lutong Ilocano Litson</strong>! We specialize in authentic Ilocano cuisine and expertly roasted pig.
-                Our menu features traditional favorites like Dinuguan, Pork Sisig, Bagnet, and our signature roasted
-                pig, all made with the freshest ingredients.
-              </p>
+              <div className="space-y-6">
+                <div className="border-l-4 border-orange-400 pl-6">
+                  <p className="font-sans text-lg text-gray-700 leading-relaxed font-medium">
+                    Welcome to Lutong Ilocano Litson! We specialize in authentic Ilocano cuisine and expertly roasted
+                    pig. Our menu features traditional favorites like <b>Dinuguan</b>, <b>Pork Sisig</b>, <b>Bagnet</b>, <b>Pinakbet</b>, <b>Dinakdakan</b> and our signature
+                    roasted pig, all made with the freshest ingredients.
+                  </p>
+                </div>
 
-              <p className="font-sans text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
-                Experience the rich, savory flavors of Ilocano cooking with every bite. Our passion for authentic
-                Filipino cuisine drives us to bring you the most delicious and traditional dishes that celebrate our
-                heritage.
-              </p>
+                <p className="font-sans text-base text-gray-600 leading-relaxed">
+                  Experience the rich, savory flavors of Ilocano cooking with every bite. Our passion for authentic
+                  Filipino cuisine drives us to bring you the most delicious and traditional dishes that celebrate our
+                  heritage and bring families together around the dinner table.
+                </p>
 
-              <p className="font-sans text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
-                We take pride in our takeout service, carefully packaging each order to preserve the authentic flavors
-                and crispy textures that make our litson special. Every container is filled with love and tradition.
-              </p>
+                <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+                  <p className="font-sans text-base text-gray-700 leading-relaxed mb-3">
+                    <span className="font-semibold text-orange-700">Our Promise:</span> We take pride in our takeout
+                    service, carefully packaging each order to preserve the authentic flavors and crispy textures that
+                    make our litson special.
+                  </p>
+                  <p className="font-sans text-sm text-gray-600 italic">
+                    Every container is filled with love, tradition, and the authentic taste of the Philippines.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="relative h-full">
@@ -80,6 +93,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

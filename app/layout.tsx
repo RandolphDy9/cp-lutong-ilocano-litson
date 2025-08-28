@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Lutong Ilocano Litson - Authentic Ilocano Cuisine & Roasted Pig",
   description:
     "Experience authentic Ilocano cuisine with our signature roasted pig, Dinuguan, Pork Sisig, Bagnet, and traditional favorites made with the freshest ingredients.",
+  icons: {
+    icon: '/images/litson-logo.jpg',
+    shortcut: '/images/litson-logo.jpg',
+    apple: '/images/litson-logo.jpg',
+  },
 }
 
 export const viewport: Viewport = {
@@ -27,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${roboto.className} antialiased`}>
+      <head>
+        <link rel="icon" href="/images/litson-logo.jpg" />
+      </head>
       <body>{children}</body>
     </html>
   )
