@@ -3,9 +3,32 @@
 import { useState } from "react"
 import Image from "next/image"
 import { ImageModal } from "@/components/ui/image-modal"
+import { Card } from "./ui/card"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel"
 
 export default function MenuSection() {
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null)
+
+  const menuItems = [
+    {
+      image: "/images/food-1.jpg",
+    },
+    {
+      image: "/images/food-2.jpg",
+    },
+    {
+      image: "/images/food-3.jpg",
+    },
+    {
+      image: "/images/food-4.jpg",
+    },
+    {
+      image: "/images/food-5.jpg",
+    },
+    {
+      image: "/images/food-6.jpg",
+    },
+  ]
 
   const handleImageClick = (src: string, alt: string) => {
     setSelectedImage({ src, alt })
@@ -114,6 +137,30 @@ export default function MenuSection() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mt-16 max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">✨ Popular Dishes You&apos;ll Love</h2>
+            <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
+              Take a look at some of our most requested dishes, perfect for any meal or occasion.
+            </p>
+          </div>
+          <Carousel>
+            <CarouselContent>
+              {menuItems.map((item, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                    <div className="relative h-60">
+                      <Image src={item.image || "/placeholder.svg"} alt={item.image} fill className="object-cover" />
+                    </div>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
 

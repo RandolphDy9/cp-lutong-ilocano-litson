@@ -72,22 +72,24 @@ export default function ContactSection() {
                 <Facebook className="w-6 h-6 text-orange-600" />
               </div>
               <h3 className="font-sans font-semibold text-gray-800 mb-2">Follow Us</h3>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="font-sans text-orange-600 hover:text-orange-700 p-0 h-auto"
-                onClick={() => window.open("https://www.facebook.com/lutong.ilocano.71", "_blank")}
-              >
-                Lutong Ilocano (main)
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="font-sans text-orange-600 hover:text-orange-700 p-0 h-auto"
-                onClick={() => window.open("https://www.facebook.com/p/Lutong-ilocano-100068432353836/", "_blank")}
-              >
-                Lutong Ilocano Page
-              </Button>
+              <div className="flex flex-col gap-1">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="font-sans text-orange-600 hover:text-orange-700 p-0 h-auto"
+                  onClick={() => window.open("https://www.facebook.com/lutong.ilocano.71", "_blank")}
+                >
+                  Lutong Ilocano (main)
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="font-sans text-orange-600 hover:text-orange-700 p-0 h-auto"
+                  onClick={() => window.open("https://www.facebook.com/p/Lutong-ilocano-100068432353836/", "_blank")}
+                >
+                  Lutong Ilocano Page
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>

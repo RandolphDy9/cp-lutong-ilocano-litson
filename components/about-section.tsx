@@ -12,9 +12,13 @@ export default function AboutSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
-            About Lutong Ilocano Litson 🥄
-          </h2>
+
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">🍽️ About Lutong Ilocano Litson 🥄</h2>
+            <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
+              Our recipes are a cherished part of our heritage, perfected over decades to ensure every bite is a celebration of Filipino culture. 🇵🇭
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-stretch">
             {/* Content Column */}
@@ -44,18 +48,8 @@ export default function AboutSection() {
               </div>
 
               <div className="space-y-6">
-                <div className="border-l-4 border-orange-400 pl-6">
-                  <p className="font-sans text-lg text-gray-700 leading-relaxed font-medium">
-                    Welcome to Lutong Ilocano Litson! We specialize in authentic Ilocano cuisine and expertly roasted
-                    pig. Our menu features traditional favorites like <b>Dinuguan</b>, <b>Pork Sisig</b>, <b>Bagnet</b>, <b>Pinakbet</b>, <b>Dinakdakan</b> and our signature
-                    roasted pig, all made with the freshest ingredients.
-                  </p>
-                </div>
-
                 <p className="font-sans text-base text-gray-600 leading-relaxed">
-                  Experience the rich, savory flavors of Ilocano cooking with every bite. Our passion for authentic
-                  Filipino cuisine drives us to bring you the most delicious and traditional dishes that celebrate our
-                  heritage and bring families together around the dinner table.
+                  Welcome to Lutong Ilocano Litson, where we specialize in authentic Ilocano cuisine and expertly roasted pig. Our menu features traditional favorites like Dinuguan, Pork Sisig, Bagnet, and more—all made with the freshest ingredients to bring you the rich, savory flavors of the Philippines. We carefully package every order with love and tradition, ensuring a delicious takeout experience.
                 </p>
 
                 <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
@@ -78,7 +72,7 @@ export default function AboutSection() {
                   alt="Takeout containers filled with delicious roasted litson and crispy pork pieces"
                   width={1200}
                   height={800}
-                  className="w-full h-64 sm:h-full rounded-xl object-cover"
+                  className="w-full h-44 sm:h-full rounded-xl object-cover"
                 />
                 <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-md shadow text-center max-w-[90%]">
                   <p className="font-sans text-sm text-gray-600 italic">
