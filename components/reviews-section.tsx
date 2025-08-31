@@ -57,7 +57,7 @@ export default function ReviewsSection() {
     <section id="reviews" className="py-20 bg-gradient-to-br from-orange-50 to-amber-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">💬 What Our Customers Say</h2>
           <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
             Don&apos;t just take our word for it - hear from our satisfied customers who love our authentic Ilocano cuisine.
           </p>

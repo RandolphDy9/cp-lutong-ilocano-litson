@@ -16,7 +16,7 @@ export default function ContactSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">🤝 Contact Us</h2>
           <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
             Ready to experience authentic Ilocano cuisine? Get in touch with us to place your order or learn more about
             our services.
@@ -94,7 +94,7 @@ export default function ContactSection() {
 
         <div className="mt-16 max-w-4xl mx-auto">
           <h3 className="font-serif text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
-            Find Us on the Map
+            📍 Find Us on the Map
           </h3>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
             <button
@@ -118,24 +118,6 @@ export default function ContactSection() {
               <p className="font-sans text-gray-600 text-sm">Click the map to get directions to our restaurant</p>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-8 mb-8">
-          <div className="inline-flex items-center bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
-            <div className="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
-            <span className="font-sans text-gray-700 font-medium">Takeout Restaurant</span>
-          </div>
-        </div>
-
-        <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-orange-600 hover:bg-orange-700 text-white font-sans text-lg px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-            onClick={() => window.open("https://www.facebook.com/p/Lutong-ilocano-100068432353836/", "_blank")}
-          >
-            <Facebook className="w-5 h-5 mr-2" />
-            Order Now on Facebook
-          </Button>
         </div>
       </div>
     </section>

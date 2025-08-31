@@ -26,10 +26,10 @@ export default function HeroSection() {
         <div className="animate-fade-in-up bg-black/75 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-lg inline-block mx-auto">
           <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 flex flex-col sm:flex-row items-center justify-center">
             Lutong Ilocano
-            <b className="block text-orange-400 sm:ml-3 ml-0 sm:mt-0 mt-2">Litson</b>
+            <b className="block text-orange-400 sm:ml-3 ml-0 sm:mt-0 mt-2">Litson 🐷</b>
           </h1>
           <p className="font-sans text-base sm:text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
-            Experience authentic Ilocano cuisine with our signature roasted pig and traditional favorites 🇵🇭
+            Taste the crunch. Savor the tradition. Our Ilocano litson and classic Filipino favorites are roasted to perfection. 🇵🇭🔥
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
             <Button
@@ -38,7 +38,7 @@ export default function HeroSection() {
               className="bg-orange-600 hover:bg-orange-700 text-white cursor-pointer font-sans text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
             >
               <Utensils className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5" />
-              View Our Menu
+              Explore the Menu
             </Button>
             <Button
               onClick={() => window.open("https://www.facebook.com/lutong.ilocano.71", "_blank")}
@@ -46,7 +46,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
             >
               <Facebook className="w-4 h-4 sm:w-5 sm:h-5 mr-1.5" />
-              <span>Follow Us On Facebook</span>
+              <span>Connect with Us</span>
             </Button>
           </div>
         </div>

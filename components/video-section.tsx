@@ -10,7 +10,7 @@ export default function VideoSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">Featured on Katas ng Kusina</h2>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-gray-800 mb-4">🎬 Featured on Katas ng Kusina</h2>
           <p className="font-sans text-lg text-gray-600 max-w-2xl mx-auto">
             Watch our story and see how we prepare our authentic Ilocano dishes with passion and tradition.
           </p>
