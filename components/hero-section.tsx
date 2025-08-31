@@ -41,7 +41,7 @@ export default function HeroSection() {
               View Our Menu
             </Button>
             <Button
-              onClick={() => window.open("https://www.facebook.com/p/Lutong-ilocano-100068432353836/", "_blank")}
+              onClick={() => window.open("https://www.facebook.com/lutong.ilocano.71", "_blank")}
               className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer font-sans text-base px-6 sm:px-8 py-2.5 sm:py-3 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
               rel="noopener noreferrer"
             >
